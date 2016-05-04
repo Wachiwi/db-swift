@@ -14,7 +14,22 @@
 		27B22A5D1CDA2934009FA219 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 27B22A5B1CDA2934009FA219 /* Cartfile */; };
 		27B22A5E1CDA2934009FA219 /* Readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 27B22A5C1CDA2934009FA219 /* Readme.md */; };
 		27B22A601CDA29DC009FA219 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B22A5F1CDA29DC009FA219 /* SQLite.framework */; };
+		27FCF1021CDA7F7000D5B881 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27FCF1001CDA7F7000D5B881 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27FCF1031CDA7F7000D5B881 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				27FCF1021CDA7F7000D5B881 /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		277266E71CD9F16700E01D7F /* DB-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DB-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +41,7 @@
 		27B22A5B1CDA2934009FA219 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		27B22A5C1CDA2934009FA219 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		27B22A5F1CDA29DC009FA219 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/Mac/SQLite.framework; sourceTree = "<group>"; };
+		27FCF1001CDA7F7000D5B881 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/Mac/SQLite.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +59,7 @@
 		277266DE1CD9F16700E01D7F = {
 			isa = PBXGroup;
 			children = (
+				27FCF1001CDA7F7000D5B881 /* SQLite.framework */,
 				27B22A611CDA29E6009FA219 /* External */,
 				27B22A5B1CDA2934009FA219 /* Cartfile */,
 				27B22A5C1CDA2934009FA219 /* Readme.md */,
@@ -89,6 +106,7 @@
 				277266E31CD9F16700E01D7F /* Sources */,
 				277266E41CD9F16700E01D7F /* Frameworks */,
 				277266E51CD9F16700E01D7F /* Resources */,
+				27FCF1031CDA7F7000D5B881 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
