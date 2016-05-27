@@ -8,23 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		277266EB1CD9F16800E01D7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277266EA1CD9F16800E01D7F /* AppDelegate.swift */; };
-		277266ED1CD9F16800E01D7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277266EC1CD9F16800E01D7F /* ViewController.swift */; };
+		277266ED1CD9F16800E01D7F /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277266EC1CD9F16800E01D7F /* UserController.swift */; };
 		277266EF1CD9F16800E01D7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277266EE1CD9F16800E01D7F /* Assets.xcassets */; };
 		277266F21CD9F16800E01D7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277266F01CD9F16800E01D7F /* Main.storyboard */; };
+		2797FBC91CF8DA54006BBF0F /* MySQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2797FBC81CF8DA54006BBF0F /* MySQL.framework */; };
+		2797FBCA1CF8DA54006BBF0F /* MySQL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2797FBC81CF8DA54006BBF0F /* MySQL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2797FBCC1CF8DB26006BBF0F /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797FBCB1CF8DB26006BBF0F /* Employee.swift */; };
+		2797FBD01CF8DB43006BBF0F /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797FBCF1CF8DB43006BBF0F /* DatabaseController.swift */; };
 		27B22A5D1CDA2934009FA219 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 27B22A5B1CDA2934009FA219 /* Cartfile */; };
 		27B22A5E1CDA2934009FA219 /* Readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 27B22A5C1CDA2934009FA219 /* Readme.md */; };
-		27B22A601CDA29DC009FA219 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B22A5F1CDA29DC009FA219 /* SQLite.framework */; };
-		27FCF1021CDA7F7000D5B881 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27FCF1001CDA7F7000D5B881 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		27FCF1051CDA84FE00D5B881 /* StatusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FCF1041CDA84FE00D5B881 /* StatusController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		27FCF1031CDA7F7000D5B881 /* Embed Frameworks */ = {
+		2797FBC71CF8DA3B006BBF0F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				27FCF1021CDA7F7000D5B881 /* SQLite.framework in Embed Frameworks */,
+				2797FBCA1CF8DA54006BBF0F /* MySQL.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,14 +37,16 @@
 /* Begin PBXFileReference section */
 		277266E71CD9F16700E01D7F /* DB-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DB-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		277266EA1CD9F16800E01D7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		277266EC1CD9F16800E01D7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		277266EC1CD9F16800E01D7F /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		277266EE1CD9F16800E01D7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		277266F11CD9F16800E01D7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		277266F31CD9F16800E01D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2797FBC81CF8DA54006BBF0F /* MySQL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MySQL.framework; path = Carthage/Build/Mac/MySQL.framework; sourceTree = "<group>"; };
+		2797FBCB1CF8DB26006BBF0F /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		2797FBCF1CF8DB43006BBF0F /* DatabaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
 		27B22A5B1CDA2934009FA219 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		27B22A5C1CDA2934009FA219 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
-		27B22A5F1CDA29DC009FA219 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/Mac/SQLite.framework; sourceTree = "<group>"; };
-		27FCF1001CDA7F7000D5B881 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/Mac/SQLite.framework; sourceTree = "<group>"; };
+		27FCF1041CDA84FE00D5B881 /* StatusController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B22A601CDA29DC009FA219 /* SQLite.framework in Frameworks */,
+				2797FBC91CF8DA54006BBF0F /* MySQL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,10 +64,9 @@
 		277266DE1CD9F16700E01D7F = {
 			isa = PBXGroup;
 			children = (
-				27FCF1001CDA7F7000D5B881 /* SQLite.framework */,
-				27B22A611CDA29E6009FA219 /* External */,
-				27B22A5B1CDA2934009FA219 /* Cartfile */,
 				27B22A5C1CDA2934009FA219 /* Readme.md */,
+				27B22A5B1CDA2934009FA219 /* Cartfile */,
+				27B22A611CDA29E6009FA219 /* External */,
 				277266E91CD9F16700E01D7F /* DB Swift */,
 				277266E81CD9F16700E01D7F /* Products */,
 			);
@@ -79,8 +83,9 @@
 		277266E91CD9F16700E01D7F /* DB Swift */ = {
 			isa = PBXGroup;
 			children = (
+				27FCF1091CDA87C300D5B881 /* Views */,
+				27FCF1081CDA87B100D5B881 /* Database */,
 				277266EA1CD9F16800E01D7F /* AppDelegate.swift */,
-				277266EC1CD9F16800E01D7F /* ViewController.swift */,
 				277266EE1CD9F16800E01D7F /* Assets.xcassets */,
 				277266F01CD9F16800E01D7F /* Main.storyboard */,
 				277266F31CD9F16800E01D7F /* Info.plist */,
@@ -88,12 +93,38 @@
 			path = "DB Swift";
 			sourceTree = "<group>";
 		};
+		2797FBCD1CF8DB2B006BBF0F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2797FBCB1CF8DB26006BBF0F /* Employee.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		27B22A611CDA29E6009FA219 /* External */ = {
 			isa = PBXGroup;
 			children = (
-				27B22A5F1CDA29DC009FA219 /* SQLite.framework */,
+				2797FBC81CF8DA54006BBF0F /* MySQL.framework */,
 			);
 			name = External;
+			sourceTree = "<group>";
+		};
+		27FCF1081CDA87B100D5B881 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				2797FBCD1CF8DB2B006BBF0F /* Models */,
+				2797FBCF1CF8DB43006BBF0F /* DatabaseController.swift */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		27FCF1091CDA87C300D5B881 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				277266EC1CD9F16800E01D7F /* UserController.swift */,
+				27FCF1041CDA84FE00D5B881 /* StatusController.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,7 +137,7 @@
 				277266E31CD9F16700E01D7F /* Sources */,
 				277266E41CD9F16700E01D7F /* Frameworks */,
 				277266E51CD9F16700E01D7F /* Resources */,
-				27FCF1031CDA7F7000D5B881 /* Embed Frameworks */,
+				2797FBC71CF8DA3B006BBF0F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,8 +199,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				277266ED1CD9F16800E01D7F /* ViewController.swift in Sources */,
+				277266ED1CD9F16800E01D7F /* UserController.swift in Sources */,
+				27FCF1051CDA84FE00D5B881 /* StatusController.swift in Sources */,
+				2797FBD01CF8DB43006BBF0F /* DatabaseController.swift in Sources */,
 				277266EB1CD9F16800E01D7F /* AppDelegate.swift in Sources */,
+				2797FBCC1CF8DB26006BBF0F /* Employee.swift in Sources */,
 				27B22A5E1CDA2934009FA219 /* Readme.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +313,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/Mac/MySQL.framework/Headers/**";
 				INFOPLIST_FILE = "DB Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "codes.dschwarz.DB-Swift";
@@ -295,6 +330,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/Mac/MySQL.framework/Headers/**";
 				INFOPLIST_FILE = "DB Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "codes.dschwarz.DB-Swift";
