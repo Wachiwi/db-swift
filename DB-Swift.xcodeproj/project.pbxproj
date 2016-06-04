@@ -7,27 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271823391CFCB2BF000B1C81 /* MySQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A007A71CFC501B00C47BE4 /* MySQL.framework */; };
+		2718233B1CFCB2C2000B1C81 /* MySQL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27A007A71CFC501B00C47BE4 /* MySQL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		271E994C1CFD794B0065824E /* EditUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271E994B1CFD794B0065824E /* EditUserController.swift */; };
+		271E994E1CFDD0B90065824E /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271E994D1CFDD0B90065824E /* Options.swift */; };
+		271E99501CFDD0E00065824E /* PatientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271E994F1CFDD0E00065824E /* PatientModel.swift */; };
+		271FCA691D002C1C001DD86A /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FCA681D002C1C001DD86A /* DatabaseController.swift */; };
 		277266EB1CD9F16800E01D7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277266EA1CD9F16800E01D7F /* AppDelegate.swift */; };
 		277266ED1CD9F16800E01D7F /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277266EC1CD9F16800E01D7F /* UserController.swift */; };
 		277266EF1CD9F16800E01D7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277266EE1CD9F16800E01D7F /* Assets.xcassets */; };
 		277266F21CD9F16800E01D7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277266F01CD9F16800E01D7F /* Main.storyboard */; };
-		2797FBC91CF8DA54006BBF0F /* MySQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2797FBC81CF8DA54006BBF0F /* MySQL.framework */; };
-		2797FBCA1CF8DA54006BBF0F /* MySQL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2797FBC81CF8DA54006BBF0F /* MySQL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2797FBCC1CF8DB26006BBF0F /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797FBCB1CF8DB26006BBF0F /* Employee.swift */; };
-		2797FBD01CF8DB43006BBF0F /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797FBCF1CF8DB43006BBF0F /* DatabaseController.swift */; };
 		27B22A5D1CDA2934009FA219 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 27B22A5B1CDA2934009FA219 /* Cartfile */; };
 		27B22A5E1CDA2934009FA219 /* Readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 27B22A5C1CDA2934009FA219 /* Readme.md */; };
-		27FCF1051CDA84FE00D5B881 /* StatusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FCF1041CDA84FE00D5B881 /* StatusController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2797FBC71CF8DA3B006BBF0F /* Embed Frameworks */ = {
+		2718233C1CFCB2C2000B1C81 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2797FBCA1CF8DA54006BBF0F /* MySQL.framework in Embed Frameworks */,
+				2718233B1CFCB2C2000B1C81 /* MySQL.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,18 +36,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		271E994B1CFD794B0065824E /* EditUserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditUserController.swift; sourceTree = "<group>"; };
+		271E994D1CFDD0B90065824E /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		271E994F1CFDD0E00065824E /* PatientModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientModel.swift; sourceTree = "<group>"; };
+		271FCA681D002C1C001DD86A /* DatabaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
 		277266E71CD9F16700E01D7F /* DB-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DB-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		277266EA1CD9F16800E01D7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		277266EC1CD9F16800E01D7F /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		277266EE1CD9F16800E01D7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		277266F11CD9F16800E01D7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		277266F31CD9F16800E01D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2797FBC81CF8DA54006BBF0F /* MySQL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MySQL.framework; path = Carthage/Build/Mac/MySQL.framework; sourceTree = "<group>"; };
-		2797FBCB1CF8DB26006BBF0F /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
-		2797FBCF1CF8DB43006BBF0F /* DatabaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
+		27A007A71CFC501B00C47BE4 /* MySQL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MySQL.framework; path = Carthage/Build/Mac/MySQL.framework; sourceTree = "<group>"; };
 		27B22A5B1CDA2934009FA219 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		27B22A5C1CDA2934009FA219 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
-		27FCF1041CDA84FE00D5B881 /* StatusController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2797FBC91CF8DA54006BBF0F /* MySQL.framework in Frameworks */,
+				271823391CFCB2BF000B1C81 /* MySQL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,18 +95,10 @@
 			path = "DB Swift";
 			sourceTree = "<group>";
 		};
-		2797FBCD1CF8DB2B006BBF0F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				2797FBCB1CF8DB26006BBF0F /* Employee.swift */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
 		27B22A611CDA29E6009FA219 /* External */ = {
 			isa = PBXGroup;
 			children = (
-				2797FBC81CF8DA54006BBF0F /* MySQL.framework */,
+				27A007A71CFC501B00C47BE4 /* MySQL.framework */,
 			);
 			name = External;
 			sourceTree = "<group>";
@@ -112,8 +106,9 @@
 		27FCF1081CDA87B100D5B881 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				2797FBCD1CF8DB2B006BBF0F /* Models */,
-				2797FBCF1CF8DB43006BBF0F /* DatabaseController.swift */,
+				271E994D1CFDD0B90065824E /* Options.swift */,
+				271E994F1CFDD0E00065824E /* PatientModel.swift */,
+				271FCA681D002C1C001DD86A /* DatabaseController.swift */,
 			);
 			name = Database;
 			sourceTree = "<group>";
@@ -122,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				277266EC1CD9F16800E01D7F /* UserController.swift */,
-				27FCF1041CDA84FE00D5B881 /* StatusController.swift */,
+				271E994B1CFD794B0065824E /* EditUserController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -137,7 +132,7 @@
 				277266E31CD9F16700E01D7F /* Sources */,
 				277266E41CD9F16700E01D7F /* Frameworks */,
 				277266E51CD9F16700E01D7F /* Resources */,
-				2797FBC71CF8DA3B006BBF0F /* Embed Frameworks */,
+				2718233C1CFCB2C2000B1C81 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,12 +194,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271E994C1CFD794B0065824E /* EditUserController.swift in Sources */,
+				271E99501CFDD0E00065824E /* PatientModel.swift in Sources */,
 				277266ED1CD9F16800E01D7F /* UserController.swift in Sources */,
-				27FCF1051CDA84FE00D5B881 /* StatusController.swift in Sources */,
-				2797FBD01CF8DB43006BBF0F /* DatabaseController.swift in Sources */,
 				277266EB1CD9F16800E01D7F /* AppDelegate.swift in Sources */,
-				2797FBCC1CF8DB26006BBF0F /* Employee.swift in Sources */,
+				271E994E1CFDD0B90065824E /* Options.swift in Sources */,
 				27B22A5E1CDA2934009FA219 /* Readme.md in Sources */,
+				271FCA691D002C1C001DD86A /* DatabaseController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +309,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/Mac/MySQL.framework/Headers/**";
+				HEADER_SEARCH_PATHS = "/usr/local/include/mysql/**";
 				INFOPLIST_FILE = "DB Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "codes.dschwarz.DB-Swift";
@@ -330,7 +326,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/Mac/MySQL.framework/Headers/**";
+				HEADER_SEARCH_PATHS = "/usr/local/include/mysql/**";
 				INFOPLIST_FILE = "DB Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "codes.dschwarz.DB-Swift";
