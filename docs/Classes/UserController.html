@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UserController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/UserController" class="dashAnchor"></a>
+    <a title="UserController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (72% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        UserController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DatabaseController.html">DatabaseController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EditUserController.html">EditUserController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserController.html">UserController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Options.html">Options</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Patient.html">Patient</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>UserController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">class</span> <span class="kt">UserController</span><span class="p">:</span> <span class="kt">NSViewController</span><span class="p">,</span> <span class="kt">NSTableViewDataSource</span></code></pre>
+
+                </div>
+              </div>
+            <p>Viewcontroller that handles the display of the patients</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC8DB_Swift14UserController8patientsGSaVS_7Patient_"></a>
+                    <a name="//apple_ref/swift/Property/patients" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC8DB_Swift14UserController8patientsGSaVS_7Patient_">patients</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Datasource for the tableview that contains all existent patient of the database (at all time)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">patients</span> <span class="p">:[</span><span class="kt">Patient</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC8DB_Swift14UserController5tableXwGSQCSo11NSTableView_"></a>
+                    <a name="//apple_ref/swift/Property/table" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC8DB_Swift14UserController5tableXwGSQCSo11NSTableView_">table</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Rerence to the tableview that contains the patients</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">table</span><span class="p">:</span> <span class="kt">NSTableView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8DB_Swift14UserController11viewDidLoadFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8DB_Swift14UserController11viewDidLoadFT_T_">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Eventhandler that initially loads the patients from the database as soon the view is loaded</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8DB_Swift14UserController8loadDataFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/loadData()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8DB_Swift14UserController8loadDataFT_T_">loadData()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method that loads the patients from the database into the datasource attribute of this controller</p>
+
+<div class="aside aside-attention">
+    <p class="aside-title">Attention</p>
+    <p>Since this method catches possible errors the user is presented with an possible unreadable error
+                        message that needs to be confirmed</p>
+
+</div>
+
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code><a href="../Classes/UserController.html#/s:vC8DB_Swift14UserController8patientsGSaVS_7Patient_">UserController.patients</a></code></p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">loadData</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8DB_Swift14UserController6nextIDFGSaVS_7Patient_Si"></a>
+                    <a name="//apple_ref/swift/Method/nextID(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8DB_Swift14UserController6nextIDFGSaVS_7Patient_Si">nextID(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the next ID of a newly inserted patient</p>
+
+<div class="aside aside-attention">
+    <p class="aside-title">Attention</p>
+    <p>This method doesnt calculate the best ID, because it could lead to inconsistency</p>
+<pre class="highlight plaintext"><code>                    If a patient is newly created an deleted instanly aftwerwards a new ID gets calculated an freed
+                        afterwards. So if a new patient is then created it gets the same ID as the previous, deleted
+</code></pre>
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    <p>Parameter patients: To calculate the next ID of a patient it needs a list of all currently existing patients
+                                            inside the database.</p>
+
+</div>
+
+<div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    <p>Returns the next ID of a patient</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">nextID</span><span class="p">(</span><span class="nv">patients</span> <span class="p">:[</span><span class="kt">Patient</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>patients</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>To calculate the next ID of a patient it needs a list of all currently existing patients inside the database.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Returns the next ID of a patient</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8DB_Swift14UserController11reloadTableFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/reloadTable()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8DB_Swift14UserController11reloadTableFT_T_">reloadTable()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Simple method that allows other views to reload the table if new data is inserted or should queried</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">reloadTable</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Data%20Sources"></a>
+                <a name="//apple_ref/swift/Section/Data Sources" class="dashAnchor"></a>
+                <a href="#/Data%20Sources">
+                  <h3 class="section-name">Data Sources</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8DB_Swift14UserController23numberOfRowsInTableViewFCSo11NSTableViewSi"></a>
+                    <a name="//apple_ref/swift/Method/numberOfRowsInTableView(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8DB_Swift14UserController23numberOfRowsInTableViewFCSo11NSTableViewSi">numberOfRowsInTableView(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Methods that need to be implemented to be conform to the <code>NSTableViewDataSource</code> protocol</p>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    <p>Parameter tableView: The table that is queried. It can be nil since there is only one table inside the view</p>
+
+</div>
+
+<div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    <p>Returns the number of rows that are stored inside the tableview</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">numberOfRowsInTableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">NSTableView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tableView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The table that is queried. It can be nil since there is only one table inside the view</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Returns the number of rows that are stored inside the tableview</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8DB_Swift14UserController9tableViewFTCSo11NSTableView25objectValueForTableColumnGSqCSo13NSTableColumn_3rowSi_GSqPs9AnyObject__"></a>
+                    <a name="//apple_ref/swift/Method/tableView(_:objectValueForTableColumn:row:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8DB_Swift14UserController9tableViewFTCSo11NSTableView25objectValueForTableColumnGSqCSo13NSTableColumn_3rowSi_GSqPs9AnyObject__">tableView(_:objectValueForTableColumn:row:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Methods that need to be implemented to be conform to the <code>NSTableViewDataSource</code> protocol</p>
+
+<p><li><p>Parameters: </p></p>
+
+<p><ul>
+<li>tableView: The table that is queried. It can be nil since there is only one table inside the view</li>
+<li>objectValueForTableColumn: ??? Don&rsquo;t know</li>
+<li>tableColumn: The table column that is going to be populated</p>
+
+<p><ul>
+<li>row: The index of the row</li>
+</ul></li>
+</ul></li>
+<div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    <p>The value that is going to be set for the column</p></p>
+
+<p></div></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">NSTableView</span><span class="p">,</span> <span class="n">objectValueForTableColumn</span> <span class="nv">tableColumn</span><span class="p">:</span> <span class="kt">NSTableColumn</span><span class="p">?,</span> <span class="nv">row</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AnyObject</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tableView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The table that is queried. It can be nil since there is only one table inside the view</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>objectValueForTableColumn</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>??? Don&rsquo;t know</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tableColumn</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The table column that is going to be populated</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The value that is going to be set for the column</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8DB_Swift14UserController15prepareForSegueFTCSo17NSStoryboardSegue6senderGSqPs9AnyObject___T_"></a>
+                    <a name="//apple_ref/swift/Method/prepareForSegue(_:sender:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8DB_Swift14UserController15prepareForSegueFTCSo17NSStoryboardSegue6senderGSqPs9AnyObject___T_">prepareForSegue(_:sender:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Eventhandler to customize segues inside the storyboard.
+In this situation it is used to determine which button is clicked by the user and 
+send correct data with the segue since all segues have the same controller as a target.</p>
+
+<ul>
+<li>Parameters:
+
+<ul>
+<li>segue: The segue that is going to happen</li>
+<li>sender: The object that emitted the event</li>
+</ul></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">prepareForSegue</span><span class="p">(</span><span class="nv">segue</span><span class="p">:</span> <span class="kt">NSStoryboardSegue</span><span class="p">,</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>segue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The segue that is going to happen</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The object that emitted the event</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external">David Schwarzmann</a>. All rights reserved. (Last updated: 2016-06-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
