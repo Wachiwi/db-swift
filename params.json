@@ -1,0 +1,6 @@
+{
+  "name": "Db-swift",
+  "tagline": "",
+  "body": "# db-swift\r\n\r\n# Requirements\r\n\r\n* Carthage\r\n* libmysqlclient\r\n\r\nAfter that \r\n\r\n# Development\r\n\r\n1. Install mysql (which includes libmysqlclient) via `brew install mysql`\r\n2. Update carthage dependencies via\r\n\r\n```\r\ncarthage update\r\n```\r\n\r\n2. Create a branch based on git workflows\r\n3. Open xcode and start developing\r\n4. Commit your changes \r\n5. Squash your commits into a single commut and submit it via a PR\r\n\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
