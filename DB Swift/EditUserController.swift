@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import MySQL
 
 class EditUserController: NSViewController {
 
@@ -139,10 +140,18 @@ class EditUserController: NSViewController {
 				commands.1.append("\"" + val + "\"")
 			}
 
+			commands.0.append("Aufnahmedatum")
+
+			let date = String(SQLDate.now())
+			let desiredLength = date.startIndex.advancedBy(date.characters.count-6)
+			commands.1.append("\"" + date.substringToIndex(desiredLength) + "\"")
+
+
 			let query :(String, String) = ("(" + commands.0.joinWithSeparator(",") + ")", "(" + commands.1.joinWithSeparator(",") + ")")
 
 			do {
 				let con = try DatabaseController.getSharedInstance().getConnection()
+				print("INSERT INTO Patient \(query.0) VALUES \(query.1)")
 				let status = try con.query("INSERT INTO Patient \(query.0) VALUES \(query.1)")
 				con.release()
 				print(status)
