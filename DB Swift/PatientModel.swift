@@ -48,9 +48,8 @@ struct Patient: QueryRowResultType, QueryParameterDictionaryType {
 
 	/**
 		Method that is automatically invoked if a instance of `Patient` is used to build a query.
- 
-
-
+		
+		- Returns: Returns a `QueryDictionary` for autowrapping the sql statement 
 	*/
 	func queryParameter() throws -> QueryDictionary {
 		return QueryDictionary([
